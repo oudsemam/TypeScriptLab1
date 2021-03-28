@@ -115,8 +115,7 @@ function calcInventoryValue(inventory: InventoryItem[]): number {
       total = 0;
     }
     if (item.quantity > 0) {
-      let itemTotal = item.quantity * item.product.price;
-      total += itemTotal;
+      total += item.quantity * item.product.price;
     }
   }
   return total;
